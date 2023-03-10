@@ -1,0 +1,22 @@
+@import "/src/variables.scss";
+
+p{
+  font-size: 1rem;
+    line-height: 1.5;
+}
+.name {
+  font-family: $mono;
+  font-size: 1rem;
+
+  & span{
+    font-family: $sans;
+    font-size: 4rem;
+    color: $aqua;
+    display: block;
+    font-weight: 300;
+  }
+}
+
+h2 {
+  font-size: 4rem;
+}
