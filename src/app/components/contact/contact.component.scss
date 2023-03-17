@@ -1,0 +1,24 @@
+@import "/src/variables.scss";
+
+
+:host{
+  text-align: center;
+}
+p:last-child {
+  margin-top: 3rem;
+}
+
+.button{
+  background-color: $magenta;
+  padding: 0.5rem;
+  border-radius: 5px;
+
+  &:hover{
+    color: $black;
+    background-color: $hotmag;
+  }
+}
+
+a{
+  color: $white;
+}
