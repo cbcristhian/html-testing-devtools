@@ -2,8 +2,25 @@
 <p>
   I'm always interested in hearing about new techniques and challenges in
   designing data for your digital area.I am currently in Santa Cruz de la
-  Sierra.
+  Sierra. Do not hesitate in subscribing to stay in touch please leave your
+  Email
 </p>
-<p>
-  <a href="mailto:cristhian.castro@unosquare.com" class="button">Email me</a>
-</p>
+<form [formGroup]="form" (submit)="send()">
+  <input formControlName="email" type="email" placeholder="Enter your email" />
+  <small
+    *ngIf="email?.invalid && email?.touched"
+    class="text-danger"
+    data-test="email-validation-msg"
+    >Please enter a valid email</small
+  >
+  <p>
+    <button
+      type="submit"
+      [disabled]="form.invalid"
+      class="button"
+      data-test="email-button"
+    >
+      Leave your Email
+    </button>
+  </p>
+</form>

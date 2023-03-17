@@ -12,13 +12,22 @@ p:last-child {
   background-color: $magenta;
   padding: 0.5rem;
   border-radius: 5px;
-
+  color: $white;
   &:hover{
     color: $black;
     background-color: $hotmag;
   }
 }
 
-a{
-  color: $white;
+
+
+input{
+  height: 26px;
+  width: 80%;
+}
+
+small{
+  color: $aqua;
+  display: block;
+  font-size: 70%;
 }

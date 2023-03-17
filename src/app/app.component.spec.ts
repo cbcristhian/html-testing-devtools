@@ -5,6 +5,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -16,6 +17,7 @@ describe('AppComponent', () => {
         IntroComponent,
         AboutComponent,
         FooterComponent,
+        ContactComponent,
       ],
     }).compileComponents();
   });
