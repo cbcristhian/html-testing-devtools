@@ -20,8 +20,8 @@ export class ContactComponent implements OnInit {
     this.form.reset();
     Swal.fire({
       icon: 'success',
-      title: 'Registro',
-      text: 'Email Registrado!',
+      title: 'Subscription',
+      text: 'Email Registered!',
     });
   }
 
