@@ -19,7 +19,6 @@ describe('AboutComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
   it('First technology should be SQL', () => {
     const sql = fixture.nativeElement.querySelector('[data-test="sql"]');
     expect(sql.textContent).toEqual('SQL');
