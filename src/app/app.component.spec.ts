@@ -1,20 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { IntroComponent } from './components/intro/intro.component';
-import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { CommonModule } from './common/common.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      declarations: [
-        AppComponent,
-        IntroComponent,
-        AboutComponent,
-        ContactComponent,
-      ],
+      imports: [RouterTestingModule, CommonModule],
+      declarations: [AppComponent],
     }).compileComponents();
   });
 
@@ -29,13 +22,4 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.title).toEqual('html-css');
   });
-
-  /*   it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain(
-      'html-css app is running!'
-    );
-  }); */
 });
